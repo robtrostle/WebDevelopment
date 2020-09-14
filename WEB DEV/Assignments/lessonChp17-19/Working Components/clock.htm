@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD/XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+	clock.htm
+	author:
+	date created:
+	date revised:
+//-->
+
+<html>
+<head>
+<title>clock.htm</title>
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=4.0)" />
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function startclock()
+{
+	stopclock();
+	showtime();
+}
+
+var timerID = null;
+var timerRunning = false;
+function stopclock()
+{
+	if (timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+}
+
+function showtime()
+{
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = " " + ((hours >12) ? hours -12 :hours);
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds <10) ? ":0" : ":") + seconds;
+	timeValue += (hours >= 12) ? " PM" : " AM";
+	document.clock.face.value = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+}
+
+-->
+</script>
+
+</head>
+
+<body onload="startclock()">
+
+<form name="clock" onSubmit="0">
+<input class="scrolltext" type="text" name="face" size=10>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: Hershey Park
+	web page: index.htm
+	author: Robert Trostle
+	date created: november.2019
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Hershey Park</title>
+
+<link href="index_files/float.css" rel="stylesheet" type="text/css" />
+
+<link href="index_files/side-scroll.css" rel="stylesheet" type="text/css" />
+
+<link href="index_files/click-scroll.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+
+body
+{ 
+	background-color:#D2691E;
+}
+
+#wrapper
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #transparent;
+	background-color:#D2691E;
+	width:1200px;
+	height:4300px;
+	top:10px;
+}
+
+#float_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:50px;
+	height:3000px;
+	top:55px;
+	left:1050px
+}
+
+#navigation
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#300000;
+	width:1180px;
+	height:55px;
+	top:0px;
+	left:0px
+}
+
+#header
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1200px;
+	height:675px;
+	top:55px;
+	left:0px
+}
+
+
+#contents_1
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#FFE4C4;
+	width:1180px;
+	height:800px;
+	top:655px;
+	left:0px
+}
+
+#contents_2_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#FFE4C4;
+	width:1180px;
+	height:800px;
+	top:1475px;
+	left:0px
+}
+
+#contents_2_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#FFE4C4;
+	width:380px;
+	height:800px;
+	top:1475px;
+	left:400px
+}
+
+#contents_2_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#FFE4C4;
+	width:380px;
+	height:800px;
+	top:1475px;
+	left:800px
+}
+#contents_3
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#FFE4C4;
+	width:1180px;
+	height:800px;
+	top:2295px;
+	left:0px
+}
+
+#contents_4
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1200px;
+	height:800px;
+	top:3115px;
+	left:0px
+}
+
+#footer_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #300000;
+	background-color:#300000;
+	width:310px;
+	height:230px;
+	top:3917px;
+	left:0px
+}
+
+#footer_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #300000;
+	background-color:#300000;
+	width:520px;
+	height:230px;
+	top:3917px;
+	left:330px
+}
+
+#footer_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #300000;
+	background-color:#300000;
+	width:310px;
+	height:230px;
+	top:3917px;
+	left:870px
+}
+
+button
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:900;
+	border:1px solid #F5DEB3;
+	background-color:#CD853F;
+	color:#A52A2A;
+	width:150px;
+	height:35px;
+	text-decoration:none
+}
+
+p
+{
+	font-family:Trebuchet MS; Helvetica, sans-serif;
+	font-size:1.05em;
+	font-style:normal;
+	font-weight:500;
+	text-align:left;
+	background:#FFE4C4;
+	color:#000;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="wrapper"><!-- wrapper -->
+
+<div id="master" align="center"><!-- master -->
+
+
+<div id="navigation" align="center"><!-- navigation -->
+
+<button onClick="window.location='#contents_1'">About</button>
+
+<button onClick="window.location='#contents_2_left'">Attractions</button>
+
+<button onClick="window.location='#contents_3'">Gallery 1</button>
+
+<button onClick="window.location='#contents_4'">Gallery 2</button>
+
+</div><!-- end navigation -->
+
+<div id="float_box" align="left"><!-- float box -->
+
+<div class="floating-menu"><!-- navigation -->
+
+<ul id="nav">
+<li id="nav_hom"><a href="#navigation">Top</a></li>
+</ul>
+
+</div>
+
+</div><!-- end float_box -->
+
+<div id="header" align="center"><!-- header -->
+
+<video width="100%" height="100%" video controls autoplay loop muted />
+	<source src="index_files/Hershey.mp4" />
+</video>
+
+</div><!-- end header -->
+
+
+<div id="contents_1" align="center"><!-- contents_1 -->
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em;font-weight:bold; color:#000">About Us</div>
+
+<p>Hersheypark (known as Hershey Park until 1970) is a family theme park situated in Hershey, Pennsylvania, United States, about 15 miles (24 km) east of Harrisburg, and 95 miles (153 km) west of Philadelphia. Founded in 1906 by Milton S. Hershey, as a leisure park for the employees of the Hershey Chocolate Company, it is wholly and privately owned by Hershey Entertainment & Resorts Company as of 2016. It has won several awards, including the IAAPA Applause Award.</p>
+
+<p>Hersheypark features a number of entertainment shows in a number of venues including Hersheypark Amphitheatre and the Music Box Theatre, as well as strolling shows throughout the park. 12 resident shows are offered along with Spring, Summer, Halloween, and Christmas seasonal shows. A popular event offered each year from November to January is Hersheypark's Christmas Candylane.</p>
+
+<p>Hersheypark has had 142 rides in the park's history. There are currently 70 rides in operation. The park has featured 16 roller coasters, two of which no longer stand – Twin Towers Toboggan and Roller Soaker. The park had two concepts canceled during their many years of operation, the first in 1942 Flying Turns and Turbulence in 2004. The first ride the park purchased was a Herschell carousel in 1908. The most recent rides added were Breaker's Edge, a hydromagnetic water coaster, and Whitecap Racer, the longest mat racer water slide in the world.</p>
+
+<p>There are facilities for accommodating particular dietary needs, including a kosher restaurant (Central PA's Kosher Mart) and a variety of restaurants offering gluten-free rolls and bread. Groups can pre-arrange catering in one of six private picnic areas inside the park. Signs are posted prohibiting guests from bringing in outside food and drink. A casual sit down restaurant called Hersheypark Place (formerly Tudor Grill) is located just outside the park. A Chickie and Pete's Crab House restaurant and a frozen yogurt stand was added for the 2014 season. A Chick-fil-A restaurant (closed Sundays) was added for the 2017 season.</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em;font-weight:bold; color:#DC143C;">Plan Your Visit</div></br>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.3em;font-weight:bold; color:#000;">Official Resorts</div></br>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.1em;font-weight:bold; color:#8B4513;">Hershey Lodge</div>
+
+<p>Hersheypark Christmas Candylane Getaways from $159. Warm, welcoming, and perfect for families! Our largest full-service resort is located just miles from Hersheypark and features the sweetest indoor pool complex in town, Hershey’s Water Works At Hershey Lodge</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.1em;font-weight:bold; color:#8B4513;">The Hotel Hershey</div>
+
+<p>Hersheypark Christmas Candylane Getaways from $259. The Hotel Hershey is one of the finest Historic Hotels of America. Known for its signature service, abundant amenities, family-friendly activities, and views overlooking Hersheypark.</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.1em;font-weight:bold; color:#8B4513;">Hershey Park Camping Resort</div>
+
+<p>Enjoy a Holiday Getaway with Rates From $49. Hersheypark Camping Resort offers immaculate RV, cabin, and tent sites in a beautiful setting conveniently located just minutes from Hersheypark.</p>
+
+</div><!-- end contents_1 -->
+
+
+<div id="contents_2_left" align="left"><!-- contents_2_left -->
+
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em; font-weight:bold; color:#FF8500">Roller coasters</div>
+<p>
+<ul>
+<li>Comet</li>
+<li>Traiblazer</li>
+<li>SooperDooperLooper</li>
+<li>Sidewinder</li>
+<li>Wildcat</li>
+<li>Great Bear</li>
+<li>Wild Mouse</li>
+<li>Lightning Racer</li>
+<li>Strom Runner</li>
+<li>Fahrenheit</li>
+<li>Skyrush</li>
+<li>Cocoa Cruise</li>
+<li>Laff Trakk</li>
+</ul>
+</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em; font-weight:bold; color:#FF8500">Water rides</div>
+<p>
+<ul>
+<li>Coal Cracker</li>
+<li>idal Force</li>
+<li>Bayside Pier</li>
+<li>East Coast Waterworks</li>
+<li>Sandcastle Cove</li>
+<li>Waverider</li>
+<li>Intercoastal Waterway</li>
+<li>The Shore</li>
+<li>Shoreline Sprayground</li>
+<li>Breakers Edge Water Coaster</li>
+<li>Whitecap Racer</li>
+</ul>
+</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em; font-weight:bold; color:#FF8500">Coastline Plunges</div>
+<p>
+<ul>
+<li>Hydro</li>
+<li>Pipeline</li>
+<li>Riptide</li>
+<li>Surge</li>
+<li>Vortex</li>
+<li>Whirlwind</li>
+</ul>
+</p>
+
+</div><!-- end contents_2_left -->
+
+
+<div id="contents_2_center" align="left"><!-- contents_2 -->
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em; font-weight:bold; color:#FF8500">Family rides</div>
+<p>
+<ul>
+<li>Dry Gulch Railroad</li>
+<li>Carrousel</li>
+<li>Starship America</li>
+<li>Skyview</li>
+<li>Monorail</li>
+<li>Scrambler</li>
+<li>Kissing Tower</li>
+<li>Twin Turnpike-Sunoco Speedway</li>
+<li>Pirate</li>
+<li>Wave Swinger</li>
+<li>Tilt-a-Whirl</li>
+<li>Fender Bender</li>
+<li>Ferris WHeel</li>
+<li>Whip</li>
+<li>Merry Derry Dip Fun Slides</li>
+<li>Music Express</li>
+<li>Frontier Flyers</li>
+<li>The Claw</li>
+<li>The Howler</li>
+<li>Tea Cups</li>
+<li>Hershey TripleTower</li>
+<li>Twin Turnpike</li>
+<li>Reeses's Cupfusion</li>
+</ul>
+</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em; font-weight:bold; color:#FF8500">Kiddie rides</div>
+<p>
+<ul>
+<li>Balloon Flite</li>
+<li>Bayside Pier</li>
+<li>Convoyy</li>
+<li>Dizzy Drums</li>
+<li>East Coast Waterworks</li>
+<li>Frog Hopper</li>
+<li>Granny Bugs</li>
+<li>Helicopters</li>
+<li>Intercoastal Waterway</li>
+<li>Livery Stables</li>
+<li>Mini Pirate</li>
+</div><!-- end contents_2_center -->
+
+<div id="contents_2_right" align="left"><!-- contents_2_right -->
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em; font-weight:bold; color:#A65600">Tickets</div>
+<p></p>
+<div align="left" style="font-family:Trebuchet MS; font-size:1em; font-weight:bold; color:#A65600">Bite Size $17.50/Month</div>
+<p>
+<ul>
+<li>Unlimited Summer visits</li>
+<li>Unlimited Springtime In The Park Visits</li>
+<li>Unlimited Hersheypark In The Dark Visits</li>
+<li>Unlimited Hersheypark Christmas Candylane Visits</li>
+<li>Unlimited ZooAmerica® Visits</li>
+<li>Parking 50% Off General</li>
+</ul>
+</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1em; font-weight:bold; color:#A65600">Full Size $20.50/Month</div>
+<p>
+<ul>
+<li>Unlimited Summer visits</li>
+<li>Parking FREE</li>
+<li>Access To Season Pass Holder Parking Lot</li>
+<li>15% Off Food & Drink</li>
+<li>15% Off Retail</li>
+<li>1-Hour Early Access</li>
+<li>Year-Round Events</li>
+<li>Friends & Family Discount Tickets</li>
+<li>BOGO Games</li>
+</ul>
+</p>
+
+<div align="left" style="font-family:Trebuchet MS; font-size:1em; font-weight:bold; color:#A65600">King Size $26.25/Month</div>
+<p>
+<ul>
+<li>Unlimited Summer visits</li><li>Unlimited Summer visits</li>
+<li>Parking FREE</li>
+<li>1-Hour Early Access</li>
+<li> FREE All-Year Dring Plan</li>
+<li>Monthly Rewards Program</li>
+<li>Be One Of The First-To-Ride Candymonium</li>
+<li>35% Off Hersheypark Tickets</li>
+<li>King Size Season Pass Appreciation Bag</li>
+<li>Christmas Candylane Hot Beverage Plan</li>
+<li>1 FREE Springtime Or Summer Ticket</li>
+<li>1 FREE Halloween Or Christmas Ticket</li>
+</ul>
+</p>
+
+</div><!-- end contents_2_right -->
+
+
+<div id="contents_3" align="left"><!-- contents_3 -->
+
+<div id="outer-wrapper">
+<span style="font-family:Trebuchet MS; font-size:1.5em; color:#000">""</span>
+
+<div id="slide-wrap">
+
+<div id="inner-wrap">
+
+	<img src="index_files/images/hershey.jpg" width="695" height="525" align="middle" style="margin:0px 0px">
+	<img src="index_files/images/waterpark.jpg" width="695" height="525" align="middle" style="margin:0px 0px">
+	<img src="index_files/images/coasters.jpg" width="695" height="525" align="middle" style="margin:0px 0px">
+	<img src="index_files/images/wooden.jpg" width="695" height="525" align="middle" style="margin:0px 0px">
+
+</div>
+
+</div>
+
+</div>
+
+</div><!-- end contents_3_right -->
+
+
+<div id="contents_4" align="left"><!-- contents_4 -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="index_files/images/night.jpg" style="width:100%">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="index_files/images/waterpark2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="index_files/images/fountain.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="index_files/images/pool.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+</div><!-- end contents_4 -->
+
+
+<div id="footer_left" align="left"><!-- footer_left -->
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Wikipedia</a><br />
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Hersheypark.com</a>
+
+</div><!-- end footer_left -->
+
+
+<div id="footer_center" align="center"><!-- footer_center -->
+
+<img src="index_files/images/pnc2.jpg" alt="" width="200" height="250" align="right" style="margin:10px 15px"/>
+
+<img src="index_files/images/hershey3.jpg" alt="" width="200" height="200" align="left" style="margin:10px 15px"/>
+
+</div><!-- end footer_center -->
+
+
+<div id="footer_right" align="right"><!-- footer_right -->
+
+</div><!-- end footer_right -->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div><!-- end master -->
+
+</div><!-- end wrapper -->
+
+
+</body>
+</html>

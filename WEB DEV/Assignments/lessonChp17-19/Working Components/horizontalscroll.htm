@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: 
+	web page: horizontalscroll.htm
+	author: msullivan
+	date created: march.2011
+-->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Horizontal Scroll Text</title>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var message = "... this is scrolling text ... this is scrolling text"
+var delay = 500;
+var timerId;
+
+function scrollText( )
+{	
+	message = message.substring(1, message.length)+message.substring(0, 1);
+	document.scrollmsg.scrolltext.value=message;
+	timerId = setTimeout ("scrollText()", delay);
+}
+
+-->
+</script>
+
+</head>
+
+<body onload="scrollText( )">
+
+<form name="scrollmsg">
+<div align="center">
+<input class="scrolltext" type="text" name="scrolltext" size="40" />
+</div>
+</form>
+
+
+</body>
+</html>

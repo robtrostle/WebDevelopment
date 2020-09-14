@@ -1,0 +1,752 @@
+side-scroll bottom margin-right:  change to margin-bottom  This is to change to an up and down one. Make the thing wider so the thingy on the bottom goes away. Change the width in the CSS slide-wrap box. 690 wide should be good. Make the outer wrapper wider too. 750 px. You can change the color from black. 
+
+<!-- TOOLBOX --> 
+
+<!-- Required Tags -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: name of whole website
+	web page: index.htm
+	author:  TrostleRobert
+	date created:  month.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>title</title>
+
+<style type="text/css">
+#wrapper
+{
+	width:1000px;
+	margin:0 auto;
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1000px;
+	height:1500px;
+	top:10px;
+}
+
+</style>
+
+</style>
+
+</head>
+<body>
+
+<div id="wrapper"><!-- master -->
+
+<div id="master"><!-- master -->
+
+
+
+
+
+</div><!-- end master -->
+</div><!-- end master -->
+
+
+</body>
+</html>
+
+
+<!-- heading tags -->
+Good Paragraph header
+<div align="left" style="font-family:Trebuchet MS; font-size:1.5em;font-weight:bold; color:#000">About Us</div>
+
+<h1 align="left | center | right"></h1>
+<h2 align="left | center | right"></h2>
+<h3 align="left | center | right"></h3>
+<h4 align="left | center | right"></h4>
+<h5 align="left | center | right"></h5>
+<h6 align="left | center | right"></h6>
+
+Dictionary List
+
+<dl>
+<dt></dt>
+<dd></dd>
+</dl>
+
+<blockquote>
+</blockquote>
+
+Unordered List
+
+<ul></ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+Ordered List
+
+<ol></ol>
+
+SPECIAL CHARACTERS
+Apostrophe:  &#700
+3/4 : &frac34
+1/2: &frac14
+
+LINKS
+
+<a href="filename.htm"></a>
+<a href="filename.htm#linkname"></a>
+<link rel="stylesheet" href="styles.css" type="text/css"> Create a CSS file called sytles.css. Link it to apply to the entire website
+
+Link with ancher
+
+<h3 id="IDName">DisplayText</h3>  <!-- Make the ID of the part you want to jump to this is called an anchor -->
+<a href="LINK.html#IDName">DisplayText</h1> <!-- CASE SENSITIVE tells browser to load page LINK.htm and scroll down to anchor called IDName -->
+
+SEMANTIC HTML TAGS
+
+<em></em> Emphasized
+<strong></strong> Bold
+<code></code> Indicates the text inside is code
+<samp></samp> Indicates sample text Generally presented in fixed widtch font like code. 
+<kbd></kbd> Indicates text that's intended to be typed by a user. 
+<var></var> Indicates the name of a variable. Usually italic or underlined. 
+<dfn</dfn> Indicates a definition and alos highlights a word. (usually in italics) that will be difined. 
+<cite></cite>
+<abbr></abbr> Indicates an abbreviation of a word. 
+
+<b></b> BOLD
+<i></i> ITALICS
+<u></u> UNDERLINED
+<small></small> small print
+<sub></sub> Subscript
+<sup></sup> Superscript
+
+<span></span> Has no effect. Paired with the <style> tag, it can take the place of any of the tags. Example below
+<p> Here is some <span style="text-decoration: underline;"> underlined text</span>.</p>
+<p> Here is some <span style="text-decoration: overline;"> overline text</span>.</p>
+<p> Here is some <span style="text-decoration: line-through;"> line-through text</span>.</p>
+<p> Here is some <span style="text-decoration: blink;"> blinking text</span>.</p>
+
+FONT PROPERTIES
+<span style ="font-weight: bold;">bold text</span>
+<span style ="font-weight: bolder;">bolder text</span>
+<span style ="font-weight: lighter;">lighter text</span>
+<span style ="font-weight: 700;">bold text</span> <!-- use in units of 100 to 900 -->
+FONT-Family
+<span style="font-family: monospace;">This is monospaced text.</span>
+<span style="font-family: sans-serif;">This is sans-serif text.</span>
+<span style="font-family: cursive;">This is cursive text.</span>
+<span style="font-family: fantasy;">This is fantasy text.</span>
+
+Font varient
+<span style='font-varient: small-caps;'>This is small-caps text.</span>
+
+---------------------------IMAGES------------------------------------------------
+
+<img src="" width="0" height="0" />
+
+LARGE IMAGE
+
+<img src="index_files/images/map.jpg" width="1200" height="800" />
+
+FLOATING IMAGE
+
+<img src="index_files/images/Steelers.jpg" alt="" width="300" height="197", style="float: right; padding:0px 15px" />
+
+Image Mapping
+<img src="index_files/images/map.jpg" width="1000" height="562" usemap="#shapes" />
+
+<map name="shapes">
+<area shape="circle | rect | poly" coords="245, 245, 150" href="linkpage.htm">
+</map>
+
+
+TEXT SHADOW
+
+text-shadow: 4px 4px #000
+
+Title Box Tag with shadowing example
+
+<span style="font-family:Trebuchet MS; font-size:5em; color:#fdd700; text-shadow: 3px 3px #000">Title</span>
+
+Break Tag
+
+<br />
+
+Cite an article (make italisized)
+
+<cite> </cite>
+
+----FORM STYLING-----
+
+<form class="contact">
+
+<fieldset>
+<legend>Customer Information</legend>
+
+<br />
+
+<label>First Name</label>
+<input type="text" />
+
+<div>
+Style Navigation buttons ----------------------------------------
+input.scrolltext
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:3em;
+	font-style:normal;
+	font-weight:900;
+	text-align:center;
+	background:#fff;
+	color:#000;
+}
+ -------------------------------------------------------------------
+VIDEO__________________________________________________________VIDEO_____________________________________________________________
+
+<video width ="100%" height="100%" video controls autoplay loop muted />
+	<source src="index_files/.mp4"/>
+https://screencast-o-matic.com/lp/screen-recording-video-editing/?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=screencast%20o%20matic&gclid=EAIaIQobChMIgraB9JnF5QIVh5WzCh0fRQl3EAAYASAAEgJ1C_D_BwE
+
+VIDEO__________________________________________________________AUDIO_____________________________________________________________
+
+<audio controls="controls" autoplay>
+	<source src=".wav" type="audio/wav" />
+</audio>
+
+___________________________________________________Slide Wrapper/Outer Wrapper______________________________________________________
+
+IFRAMES
+
+<iframe src="" width="" height="" frameborder="0/1" scrolling="yes/no/auto">
+</iframe>
+
+<div id="outer-wrapper">
+<span style="font-family:Trebuchet MS; font-size:1.5em; color:#000">""</span>
+
+<div id="slide-wrap">
+
+<div id="inner-wrap">
+
+	<img src="index_files/images/pcm01.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+	<img src="index_files/images/pcm02.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+	<img src="index_files/images/pcm03.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+	<img src="index_files/images/pcm04.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+</div>
+
+</div>
+
+</div>
+
+
+<!----------------------------- 1000px standard setup ------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website:Pittsburgh
+	web page: index.htm
+	author:  TrostleRobert
+	date created:  October.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Pittsburgh</title>
+
+<style type="text/css"> 
+
+body
+{
+	background-color:#ff9200;
+}
+
+#wrapper
+{
+	width:1000px;
+	margin:0 auto;
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid transparent;
+	background-color:#ff9200;
+	width:1000px;
+	height:1900px;
+	top:10px;
+}
+
+#navigation
+{
+	position:absolute;
+	padding:10px;
+	border:transparent;
+	background-color:transparent;
+	width:500px;
+	height:25px;
+	top:400px;
+	left:250px
+}
+
+#header
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1000px;
+	height:480px;
+	top:0px;
+}
+
+#title_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid transparent;
+	background-color: transparent;
+	width:500px;
+	height:70px;
+	top:100px;
+	left:250px
+}
+
+
+
+#contents_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:480px;
+	height:1080px;
+	top:480px;
+	left:0px
+}
+
+#contents_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:480px;
+	height:1080px;
+	top:480px;
+	left:500px
+}
+
+#footer_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:190px;
+	height:218px;
+	top:1580px;
+	left:0px
+}
+
+#footer_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:560px;
+	height:218px;
+	top:1580px;
+	left:210px
+}
+
+#footer_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:190px;
+	height:218px;
+	top:1580px;
+	left:790px
+}
+
+a
+{
+	font-family:Trebuchet MS;
+	font-size:1.5em;
+	margin:1em;
+	font-weight:900;
+	text-decoration:none
+}
+
+a:link, a:visited, a:active
+
+{
+	color:#fdd700;
+}
+
+p
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:1em;
+	font-style:normal;
+	font-weight:500;
+	text-align:left;
+	background:#fff;
+	color:#000;
+}
+
+button
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:900;
+	background-color:#fff;
+	color:#000;
+	width:150px;
+	height:35px;
+	text-decoration:none;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="wrapper"><!-- master -->
+
+<div id="master" align="center"><!-- master -->
+
+
+
+<div id="header" align="center"><!-- header -->
+
+
+<img src="index_files/images/BirdsEyeView.jpg" width="1000" height="480" />
+
+
+</div><!-- end header -->
+
+
+
+<div id="title_box" align="center"><!-- title_box -->
+
+<span style="font-family:Trebuchet MS; font-size:5em; color:#fdd700">Pittsburgh</span>
+
+</div><! ---end title box ----->
+
+
+
+<div id="navigation" align="center"><!-- navigation -->
+
+<button onClick="window.location='#'">Name</button>
+<button onClick="window.location='#'">Name</button>
+<button onClick="window.location='#'">Name</button>
+<button onClick="window.location='#'">Name</button>
+<button onClick="window.location='#'">Name</button>
+
+</div><!-- end navigation -->
+
+
+
+
+<div id="contents_left" align="left"><!-- contents_left -->
+
+
+
+
+
+</div><!-- end contents_left -->
+
+<div id="contents_right" align="left"><!-- contents_right -->
+
+<img src="index_files/images/Bridge.jpg" alt="" width="450" height="377" align="middle" style="margin:10px 15px" />
+
+</div><!-- end contents_right -->
+
+
+
+<div id="footer_left" align="left"><!-- footer_left -->
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Wikipedia</a></br>
+
+</div><!-- end footer_left -->
+
+
+<div id="footer_center" align="center"><!-- footer_center -->
+
+<img src="index_files/images/Pens.png" alt="" width="250" height="166" align="middle" style="margin:10px 15px" />
+
+</div><!-- end footer_center -->
+
+
+<div id="footer_right" align="right"><!-- footer_right -->
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Home</a></br>
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="index_files/retirement.htm">Heinz Field</a>
+
+</div><!-- end footer_right -->
+
+</div><!-- end master -->
+
+</div><!-- end wrapper -->
+
+</body>
+</html>
+
+
+---------------------------------------------------  Standard 4 content ONE PAGE setup------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website:Pittsburgh
+	web page: index.htm
+	author:  TrostleRobert
+	date created:  October.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>One Page - Forms</title>
+
+<style type="text/css"> 
+
+
+#wrapper
+{
+	width:1000px;
+	margin:0 auto;
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1000px;
+	height:4450px;
+	top:10px;
+}
+
+#navigation
+{
+	position:absolute;
+	padding:10px;
+	border:#000;
+	background-color:#fff;
+	width:980px;
+	height:55px;
+	top:0px;
+	left:0px
+}
+
+#header
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1000px;
+	height:800px;
+	top:55px;
+	left:0px
+}
+
+#contents_1
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:980px;
+	height:800px;
+	top:855px;
+	left:0px
+}
+#contents_2
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:980px;
+	height:800px;
+	top:1675px;
+	left:0px
+}
+#contents_3
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:980px;
+	height:800px;
+	top:2495px;
+	left:0px
+}
+
+#contents_4
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:980px;
+	height:800px;
+	top:3315px;
+	left:0px
+}
+
+#footer_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:190px;
+	height:218px;
+	top:4135px;
+	left:0px
+}
+
+#footer_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:560px;
+	height:218px;
+	top:4135px;
+	left:210px
+}
+
+#footer_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:190px;
+	height:218px;
+	top:4135px;
+	left:790px
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div id="wrapper"><!-- master -->
+
+<div id="master" align="center"><!-- master -->
+
+
+
+<div id="navigation" align="center"><!-- navigation -->
+
+
+</div><!-- end navigation -->
+
+
+
+
+<div id="header" align="center"><!-- header -->
+
+
+</div><!-- end header -->
+
+
+
+
+<div id="contents_1" align="center"><!-- contents_1 -->
+
+</div><!-- end contents_1 -->
+
+
+
+
+<div id="contents_2" align="center"><!-- contents_2 -->
+
+</div><!-- end contents_2 -->
+
+
+
+<div id="contents_3" align="center"><!-- contents_3 -->
+
+</div><!-- end contents_3 -->
+
+
+
+<div id="contents_4" align="center"><!-- contents_4 -->
+
+</div><!-- end contents_4 -->
+
+
+
+
+
+<div id="footer_left" align="left"><!-- footer_left -->
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Wikipedia</a></br>
+
+</div><!-- end footer_left -->
+
+
+
+
+
+<div id="footer_center" align="center"><!-- footer_center -->
+
+<img src="index_files/images/Pens.png" alt="" width="250" height="166" align="middle" style="margin:10px 15px" />
+
+</div><!-- end footer_center -->
+
+
+
+
+<div id="footer_right" align="right"><!-- footer_right -->
+
+</div><!-- end footer_right -->
+
+
+
+
+</div><!-- end master -->
+
+</div><!-- end wrapper -->
+
+</body>
+</html>

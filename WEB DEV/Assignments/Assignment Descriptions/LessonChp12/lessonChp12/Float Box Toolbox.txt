@@ -1,0 +1,49 @@
+
+#float_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:50px;
+	height:3000px;
+	top:55px;
+	left:1050px
+}
+
+
+<div id="float_box" align="left"><!--float_box -->
+
+<div class="floating-menu"><!-- navigation -->
+
+<ul id="nav">
+<li id="nav_hom"><a href="#navigation">Top</a></li>
+</ul>
+
+</div>
+
+</div><!-- end float_box -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

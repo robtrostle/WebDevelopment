@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: 
+	web page: verticalscroll.htm
+	author: mmsullivan
+	date created: march.2011
+-->
+
+<head>
+<meta charset="utf-8">
+<title>JavaScript Vertical Scroll</title>
+
+<style type="text/css">
+
+#contents
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:800px;
+	height:300px;
+	top:150px;
+	left:100px
+}
+
+#marquee_replacement
+{
+	position:absolute;
+	border:1px solid #000000;
+	background-color:#ffffff;
+	width:700px;
+	height:700px;
+	overflow:auto;
+	left:200px
+}
+
+#marquee_replacement p.spacer
+{
+	height:150px;
+}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var speed = 2; // change scroll speed with this value
+
+function init(){
+  var el = document.getElementById("marquee_replacement");
+  el.style.overflow = 'hidden';
+  scrollFromBottom();
+}
+ 
+var go = 0;
+var timeout = '';
+/**
+ * This is where the scroll action happens.
+ * Recursive method until stopped.
+ */
+function scrollFromBottom(){
+  clearTimeout(timeout);
+  var el = document.getElementById("marquee_replacement");
+  if(el.scrollTop >= el.scrollHeight-150){
+    el.scrollTop = 0;
+  };
+  el.scrollTop = el.scrollTop + speed;
+  if(go == 0){
+    timeout = setTimeout("scrollFromBottom()",50);
+  };
+}
+ 
+/**
+ * Set the stop variable to be true (will stop the marquee at the next pass).
+ */
+function stop(){
+  go = 1;
+}
+ 
+/**
+ * Set the stop variable to be false and call the marquee function.
+ */
+function startit(){
+  go = 0;
+  scrollFromBottom();
+}
+
+-->
+</script>
+
+
+</head>
+
+<body onload="init();">
+
+<div id="contents" align="left"><!-- contents -->
+
+<div align="center">
+Hold mouse over scroll to stop!
+</div>
+
+<div id="marquee_replacement" onmouseout="startit();" onmouseover="stop();">
+<p class="spacer"></p>
+
+
+
+<p class="spacer"></p>
+</div>
+
+
+</div><!-- end contents -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

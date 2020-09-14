@@ -1,0 +1,34 @@
+<!-- side-scroll.css -->
+
+* 
+{
+    margin:0;
+    padding:0;
+}
+
+#outer-wrapper 
+{
+    width:750px;
+    height: 580px;
+    margin: 30px auto;
+    border: transparent;
+    background:#800000;
+    padding:10px 0 25px 0;
+}
+
+#slide-wrap 
+{
+    width: 750px; 
+    height: 525px;
+    margin:0 auto;
+    overflow: auto; 
+    background:#800000;
+    border:transparent;
+}
+
+#inner-wrap 
+{
+    float:left;
+    margin-bottom:-30000px;/*Be safe with Opera's limited negative margin of 32695px (-999em could cause problems with large font sizes)*/
+    padding-left:20px;
+}

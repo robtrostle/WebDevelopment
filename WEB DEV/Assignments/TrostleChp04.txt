@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: Class Website
+	web page: index.htm
+	author:  Trostle
+	date created:  September.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Class Website</title>
+
+</head>
+<body>
+
+
+</body>
+</html>
+

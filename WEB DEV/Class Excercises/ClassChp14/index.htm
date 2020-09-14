@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: Chapter 14
+	web page: index.htm
+	author:  TrostleRobert
+	date created:  October.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Chapter 14</title>
+
+<link href="index_files/float.css" rel="stylesheet" type="text/css" />
+
+<link href="index_files/side-scroll.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css"> 
+
+body
+{
+	background-color:#ff9200;
+}
+
+
+
+#wrapper
+{
+	width:1200px;
+	margin:0 auto;
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border: transparent;
+	background-color:#fff;
+	width:1200px;
+	height:5350px;
+	top:10px;
+}
+
+#float_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:50px;
+	height:5000px;
+	top:55px;
+	left:900px
+}
+
+
+#navigation
+{
+	position:absolute;
+	padding:10px;
+	border:#000;
+	background-color:#000;
+	width:1181px;
+	height:55px;
+	top:0px;
+	left:0px
+}
+
+#header
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1200px;
+	height:675px;
+	top:50px;
+	left:0px
+}
+
+#contents_01
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1180px;
+	height:800px;
+	top:685px;
+	left:0px
+}
+#contents_02
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:1180px;
+	height:1075px;
+	top:1505px;
+	left:0px
+}
+#contents_03
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1180px;
+	height:800px;	
+	top:2600px;
+	left:0px
+}
+
+#contents_04
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1180px;
+	height:800px;
+	top:3420px;
+	left:0px
+}
+
+#contents_05
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1180px;
+	height:800px;
+	top:4240px;
+	left:0px
+}
+
+#footer_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:220px;
+	height:218px;
+	top:5060px;
+	left:0px
+}
+
+#footer_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:730px;
+	height:218px;
+	top:5060px;
+	left:210px
+}
+
+#footer_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:220px;
+	height:218px;
+	top:5060px;
+	left:960px
+}
+
+button
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:900;
+	background-color:#ff9200;
+	color:#000;
+	width:150px;
+	height:35px;
+	text-decoration:none;
+}
+
+form
+{
+  width: 400px;
+  color: #3E4A49;
+  background-color: #FEF7D6;
+  padding: 20px;
+  border: 2px solid #4899BE;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-serif;
+  font-size: 0.8em;
+}
+
+fieldset
+{
+  padding: 0 20px 20px;
+  margin: 0 0 20px;
+  border: 1px solid #3E4A49;
+}
+
+legend
+{
+  color: #FFFFFF;
+  background-color: #4899BE;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 0;
+  width: 9em;
+  border: 1px solid #3E4A49;
+}
+
+label
+{
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 30%;
+  padding-top: 0.25em;
+  margin: 1em 5px 0 0;
+}
+
+input, select
+{
+  margin: 1em 0 0 0;
+  width: 50%;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 2px;
+}
+
+#buttons
+{
+  text-align: right;
+  margin: -15px 0 -5px 0;
+}
+
+input.button
+{
+  width: auto;
+  background: #FFFFFF;
+  border: 2px solid #4899BE;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div id="wrapper"><!-- master -->
+
+<div id="master" align="center"><!-- master -->
+
+
+
+<div id="navigation" align="center"><!-- navigation -->
+
+
+<button onClick="window.location='#contents_01'">Contents 1</button>
+<button onClick="window.location='#contents_02'">Contents 2</button>
+<button onClick="window.location='#contents_03'">Contents 3</button>
+<button onClick="window.location='#contents_04'">Contents 4</button>
+<button onClick="window.location='#contents_05'">Contents 5</button>
+
+
+</div><!-- end navigation -->
+
+
+
+
+<div id="float_box" align="left"><!--float_box -->
+
+<div class="floating-menu"><!-- navigation -->
+
+<ul id="nav">
+<li id="nav_hom"><a href="#navigation">Top</a></li>
+</ul>
+
+</div>
+
+</div><!-- end float_box -->
+
+
+
+
+
+<div id="header" align="center"><!-- header -->
+
+<video width="100%" height="100%" video controls autoplay loop muted />
+	<source src="index_files/videos/Cape May Ferry.mp4" />
+
+</div><!-- end header -->
+
+
+<div id="contents_01" align="center"><!-- contents_01 -->
+
+
+
+</div><!-- end contents_01 -->
+
+
+
+<div id="contents_02" align="center"><!-- contents_02-->
+
+
+
+</div><!-- end contents_02 -->
+
+
+
+
+
+
+<div id="contents_03" align="center"><!-- contents_03 -->
+
+<audio controls="controls" autoplay>
+	<source src="index_files/videos/Love Is Like a Rock.wav" type="audio/wav" />
+</audio>
+
+</div><!-- end contents_03 -->
+
+
+
+
+
+<div id="contents_04" align="center"><!-- contents_04 -->
+
+<div id="outer-wrapper">
+<span style="font-family:Trebuchet MS; font-size:1.5em; color:#000">""</span>
+
+<div id="slide-wrap">
+
+<div id="inner-wrap">
+
+	<img src="index_files/images/pcm01.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+	<img src="index_files/images/pcm02.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+	<img src="index_files/images/pcm03.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+	<img src="index_files/images/pcm04.jpg" width="800" height="600" align="middle" style="margin:0px 0px">
+
+</div>
+
+</div>
+
+</div>
+
+
+</div><!-- end contents_04 -->
+
+
+
+<div id="contents_05" align="center"><!-- contents_05-->
+
+
+
+</div><!-- end contents_05 -->
+
+<div id="footer_left" align="left"><!-- footer_left -->
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Wikipedia</a></br>
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Luxor Hotel</a></br>
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">City of Las Vegas</a></br>
+
+</div><!-- end footer_left -->
+
+
+
+
+
+<div id="footer_center" align="center"><!-- footer_center -->
+
+<img src="index_files/images/luxor.png" alt="" width="250" height="200" align="left" style="margin:10px 15px" />
+
+<img src="index_files/images/ad.jpg" alt="" width="250" height="200" align="right" style="margin:10px 15px" />
+
+</div><!-- end footer_center -->
+
+
+
+
+<div id="footer_right" align="right"><!-- footer_right -->
+
+</div><!-- end footer_right -->
+
+
+
+
+</div><!-- end master -->
+
+</div><!-- end wrapper -->
+
+</body>
+</html>

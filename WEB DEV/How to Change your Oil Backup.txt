@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website:How to change your oil
+	web page:index.htm
+	author:  TrostleRobert
+	date created:  September.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>How to Change Your Oil</title>
+
+
+</head>
+<body>
+
+<h1 align="center">How to Change Your Oil</h1>
+
+<h3 align="left">The goal of these instructions is to guide you through the process of changing your motor oil. Some details such as filter location and drain bolt location may vary from automobile to automobile. </h3>
+
+<h3 align="left">This tutorial is organized into six steps. These steps have been described through years of my own experience and from calling upon the combined experience of friends and other sources of advice over the years. After following these simply steps anyone with basic hand tool skills will be able to successfully change their own oil whenever needed.</h3>
+
+<h1 align="left">Step 1: Gather Supplies</h1>
+
+<h3 align="left">The first step of any job worth doing is the gathering of the necessary supplies. Fortunately, this job is rather simple and the list of needs is a short list.</h3>
+
+<ul>
+<li><b>Car Jack</b></li>
+<li><b>Car jack stands (for safety)</b></li>
+<li><b>Socket wrench</b></li>
+<li><b>Rubber gloves</b></li>
+<li><b>Old towel/blanket to catch loose oil</b></li>
+<li><b>Sturdy oil drain pan (must be heat safe, preferably with spout)</b></li>
+<li><b>Oil</b></li>
+<li><b>Oil filter</b></li>
+<li><b>Funnel</b></li>
+<li><b>Paper towels</b></li>
+</ul>
+
+<h3 align="left">To begin with, new oil will be needed. Oil brand can be chosen by personal preference and oil grade should be chosen as recommended by the automobile&#700s user&#700s manual. A new oil filter will also be needed. Again the oil filter brand can be chosen by personal preference. I would recommend a filter that has been designed to be tightened by hand (one that has a coarse or grip-able body) otherwise you may require an oil filter wrench also. If an oil filter wrench is unavailable you may be able to use a large pipe wrench, or a pair of channel lock pliers, if this is the case be extremely careful not to crush the body of the filter. You will also need the appropriate size wrench for the oil drain bolt and an oil pan to catch the old oil while draining. You may also require some paper towels and oil drying mix to clean any spilt oil.</h3>
+
+<h1 align="left">Step 2:  Prepare</h1>
+
+<ol><b>
+<li><b>With the engine turned off remove the oil filler cap to prevent vacuum from building inside the engine while the oil drains. Locate the drain bolt on the oil pan and place the oil draining pan under the drain bolt. Jack the car if you need extra clearance.</b></li>
+<li><b>Whenever jacking a car be sure to follow safety procedure. Make sure to check jack equipment for leaks and only lift a car with the jack in the proper jack location (see automobile user&#700s manual)</b></li>
+</b></ol>
+
+<dl><b>
+<dt>NOTE:</dt>
+<dd>I have seen the recommendation to run the engine before draining the oil as a way of warming the oil and expediting its draining. Although this does no harm to the engine I would refrain from doing this unless the oil is extremely cold as you will effectively scatter the oil throughout the engine while it runs reducing the likelihood of draining ALL the oil.
+</dd></b>
+</dl>
+
+<h1 align="left">Step 3: Out with the Old</h1>
+
+<h3 align="left">Using the proper size wrench, remove the drain bolt and let the oil drain into the drain pan completely. This may take several minutes. After the oil has drained you can removed the oil filter, also making sure to remove the old oil filter gasket.</h3>
+
+<h3 align="left">After the oil has ceased to flow from the drain you can prepare you supplies for refilling. The proper amount of fresh oil can be staged for filling. Any oil drying mix that is needed can be spread and any small spills under the hood can be wiped up to prevent the unpleasant smell and reality or under-hood burning oil.</h3>
+
+<h3 align="left">After the last bit of oil has drained out you may replace the oil drain bolt being careful that the threads on the bolt itself and on the drain hole are clean.</h3>
+
+<h1 align="left">Step 4: In With the New</h1>
+
+<h3 align="left">Now you are ready to pour fresh oil in your engine, before pouring new oil be sure to install a new oil filter. This is where a grip-able filter is nice and caution with any type of oil filter wrench is essential. If the filter is crushed or dented during tightening the internal structure can be broken or dislodged. Fill the new filter &frac34 full of fresh oil before installation. Also by spreading a very thin layer of oil on the filter&#700s rubber seal you can be sure not to tear the seal during installation. Turn the filter until it is tight and then about &frac14 turn more. Be careful not to over tighten the filter, in the case where the oil filter screw is ruined (threads striped out) the entire engine may require removal.</h3>
+
+<h3 align="left">With the oil filter in place and the drain bolt replaced you can fill the engine with the approved amount of oil through the engine&#700s oil filler. A funnel may make this step much easier, depending on oil filler location. Most oil bottles are designed to limit gurgling and make pouring the fresh oil a smooth task. When you are finished filling the engine with the proper amount of fresh oil you can replace the oil filler cap. Keep your empty oil bottles.</h3>
+
+<dl><b>
+<dt>NOTE:</dt>
+<dd>A strong magnet can be attached to the exterior of the oil pan, or to the oil filter to attract and trap metal particles and shaving circulating with the oil.
+</dd></b>
+</dl>
+
+<h1 align="left">Step 5: Clean-Up / Recycle</h1>
+
+<h3 align="left">At this point you can lower the car if it was jacked. </h3>
+<h3 align="left">As with any maintenance be sure to use oil dry mix to soak-up any soiled oil and paper towels to wipe away any oil that may have fallen of engine surfaces. Using the empty oil bottles from the fresh oil pour the dirty oil from the drain pan for disposal.</h3>
+<h3 align="left">Most auto parts stores and some local dealerships will take spent oil free of charge for recycling. Make sure to replace any trim or under-car plastic panels that were removed for access during the oil change.</h3>
+<h3 align="left">Also make sure not to forget the cardinal rule of auto maintenance, clean and put your tools away.</h3>
+
+<h1 align="left">Step 6: Tracking Your Maintenance</h1>
+
+<h3 align="left">That&#700s it you&#700re all done, after finishing an oil job you should take note of your mileage. Mileage can be recorded in a maintenance journal or on the car itself in a sticker or some other handy place. The main idea behind recording mileage is to stay on track with scheduled maintenance.</h3>
+
+<h3 align="left">Motor oil should be changed about every three thousand miles. It may also be of use to record the grade of oil that was used in the replacement. This way consistency in oil grade can be achieved. All repairs and preventative maintenance should be recorded. </h3>
+
+
+
+
+
+
+
+</body>
+</html>

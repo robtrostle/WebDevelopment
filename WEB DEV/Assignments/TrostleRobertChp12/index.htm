@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website: Las Vegas
+	web page: index.htm
+	author:  TrostleRobert
+	date created:  October.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Las Vegas</title>
+
+<link href="index_files/float.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css"> 
+
+body
+{
+	background-color:#ff9200;
+}
+
+
+
+#wrapper
+{
+	width:1200px;
+	margin:0 auto;
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border: transparent;
+	background-color:#FFDEAD;
+	width:1200px;
+	height:4450px;
+	top:10px;
+}
+
+#float_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:50px;
+	height:3000px;
+	top:55px;
+	left:900px
+}
+
+#title_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid transparent;
+	background-color: transparent;
+	width:500px;
+	height:70px;
+	top:100px;
+	left:325px
+}
+
+#navigation
+{
+	position:absolute;
+	padding:10px;
+	border:#000;
+	background-color:#000;
+	width:1181px;
+	height:55px;
+	top:0px;
+	left:0px
+}
+
+#header
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1200px;
+	height:800px;
+	top:55px;
+	left:0px
+}
+
+#contents_1
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:1180px;
+	height:800px;
+	top:855px;
+	left:0px
+}
+#contents_2_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:580px;
+	height:1075px;
+	top:1675px;
+	left:0px
+}
+
+#contents_2_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:580px;
+	height:1075px;
+	top:1675px;
+	left:600px
+}
+#contents_3
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#000;
+	width:1180px;
+	height:800px;	
+	top:2772px;
+	left:0px
+}
+
+#contents_4_left
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:600px;
+	height:800px;
+	top:3594px;
+	left:0px
+}
+#contents_4_right
+{
+	position:absolute;
+	padding:0px;
+	border:1px solid #000;
+	background-color:#d3edf8;
+	width:600px;
+	height:800px;
+	top:3594px;
+	left:600px
+}
+
+#footer_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:220px;
+	height:218px;
+	top:4181px;
+	left:0px
+}
+
+#footer_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:730px;
+	height:218px;
+	top:4181px;
+	left:210px
+}
+
+#footer_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:220px;
+	height:218px;
+	top:4181px;
+	left:960px
+}
+
+button
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:900;
+	background-color:#ff9200;
+	color:#000;
+	width:150px;
+	height:35px;
+	text-decoration:none;
+}
+
+form
+{
+  width: 400px;
+  color: #3E4A49;
+  background-color: #FEF7D6;
+  padding: 20px;
+  border: 2px solid #4899BE;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-serif;
+  font-size: 0.8em;
+}
+
+fieldset
+{
+  padding: 0 20px 20px;
+  margin: 0 0 20px;
+  border: 1px solid #3E4A49;
+}
+
+legend
+{
+  color: #FFFFFF;
+  background-color: #4899BE;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 0;
+  width: 9em;
+  border: 1px solid #3E4A49;
+}
+
+label
+{
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 30%;
+  padding-top: 0.25em;
+  margin: 1em 5px 0 0;
+}
+
+input, select
+{
+  margin: 1em 0 0 0;
+  width: 50%;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 2px;
+}
+
+#buttons
+{
+  text-align: right;
+  margin: -15px 0 -5px 0;
+}
+
+input.button
+{
+  width: auto;
+  background: #FFFFFF;
+  border: 2px solid #4899BE;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div id="wrapper"><!-- master -->
+
+<div id="master" align="center"><!-- master -->
+
+
+
+<div id="navigation" align="center"><!-- navigation -->
+
+
+<button onClick="window.location='#contents_1'">About</button>
+<button onClick="window.location='#contents_2_left'">Form</button>
+<button onClick="window.location='#contents_3'">Map</button>
+<button onClick="window.location='#contents_4_left'">Activities</button>
+<button onClick="window.location='#header'">Information</button>
+
+</div><!-- end navigation -->
+
+
+
+
+<div id="float_box" align="left"><!--float_box -->
+
+<div class="floating-menu"><!-- navigation -->
+
+<ul id="nav">
+<li id="nav_hom"><a href="#navigation">Top</a></li>
+</ul>
+
+</div>
+
+</div><!-- end float_box -->
+
+
+
+
+
+<div id="header" align="center"><!-- header -->
+
+<img src="index_files/images/birdseye.jpg" width="1200" height="800" />
+
+
+</div><!-- end header -->
+
+<div id="title_box" align="center"><!-- title_box -->
+
+<span style="font-family:Trebuchet MS; font-size:5em; color:#ff9200; text-shadow: 4px 4px #000">Las Vegas, NV</span>
+
+</div><! ---end title box ----->
+
+
+
+
+<div id="contents_1" align="center"><!-- contents_1 -->
+
+<img src="index_files/images/egypt.jpg" alt="" width="196" height="260", style="float: right; padding:0px 15px" />
+
+<span style="font-family:Trebuchet MS; font-size:3em; font-weight:bold; color:#000">About Las Vegas</span>
+
+<p> Spanish for "The Meadows"; Spanish: [laz ˈβeɣas]), officially the City of Las Vegas and often known simply as Vegas, is the 28th-most populated city in the United States, the most populated city in the state of Nevada, and the county seat of Clark County. The city anchors the Las Vegas Valley metropolitan area and is the largest city within the greater Mojave Desert. Las Vegas is an internationally renowned major resort city, known primarily for its gambling, shopping, fine dining, entertainment, and nightlife. The Las Vegas Valley as a whole serves as the leading financial, commercial, and cultural center for Nevada.</p>
+
+
+
+<p>The city bills itself as The Entertainment Capital of the World, and is famous for its mega casino–hotels and associated activities. It is a top three destination in the United States for business conventions and a global leader in the hospitality industry, claiming more AAA Five Diamond hotels than any other city in the world. Today, Las Vegas annually ranks as one of the world's most visited tourist destinations. The city's tolerance for numerous forms of adult entertainment earned it the title of "Sin City", and has made Las Vegas a popular setting for literature, films, television programs, and music videos.</p>
+
+<img src="index_files/images/newyork.jpg" alt="" width="196" height="260", style="float: left; padding:0px 15px" />
+
+<p>Las Vegas was settled in 1905 and officially incorporated in 1911. At the close of the 20th century, it was the most populated American city founded within that century (a similar distinction earned by Chicago in the 1800s). Population growth has accelerated since the 1960s, and between 1990 and 2000 the population nearly doubled, increasing by 85.2%. Rapid growth has continued into the 21st century, and according to estimates from the U.S. Census Bureau, the city had 648,224 residents in 2018, with a metropolitan population of 2,227,053.</p>
+
+<p>As with most major metropolitan areas, the name of the primary city ("Las Vegas" in this case) is often used to describe areas beyond official city limits. In the case of Las Vegas, this especially applies to the areas on and near the Las Vegas Strip, which is actually located within the unincorporated communities of Paradise and Winchester.</p>
+
+<img src="index_files/images/venice.jpg" alt="" width="196" height="260", style="float: right; padding:0px 15px" />
+
+<p>Las Vegas has a subtropical hot desert climate (Köppen climate classification: BWh), typical of the Mojave Desert in which it lies. This climate is typified by long, hot summers; warm transitional seasons; and short, mild to chilly winters. There is abundant sunshine throughout the year, with an average of 310 sunny days and bright sunshine during 86% of all daylight hours. Rainfall is scarce, with an average of 4.2 in (110 mm) dispersed between roughly 26 to 27 total rainy days per year. Las Vegas is among the sunniest, driest, and least humid locations in North America, with exceptionally low dew points and humidity that sometimes remains below 10%.</p>
+
+<p>The summer months of June through September are very hot, though moderated by extremely low humidity. July is the hottest month, with an average daytime high of 104.2 °F (40.1 °C). On average, 134 days per year reach or exceed 90 °F (32 °C), of which 74 days reach 100 °F (38 °C) and 7 days reach 110 °F (43 °C). During the peak intensity of summer, overnight lows frequently remain above 80 °F (27 °C) and occasionally above 85 °F (29 °C). While most summer days are consistently hot, dry, and cloudless, the North American Monsoon sporadically interrupts this pattern and brings more cloud cover, thunderstorms, lightning, increased humidity, and brief spells of heavy rain. The window of opportunity for the monsoon to affect Las Vegas usually falls between July and August, although this is inconsistent and varies considerably in its impact from year to year. Summer in Las Vegas is marked by a significant diurnal variation; while less extreme than other parts of the state, nighttime lows in Las Vegas are often 30 °F (16.7 °C) or more lower than daytime highs.</p>
+
+
+
+
+
+
+</div><!-- end contents_1 -->
+
+
+
+<div id="contents_2_left" align="left"><!-- contents_2_left -->
+
+<span style="font-family:Trebuchet MS; font-size:2em; font-weight:bold; color:#f3210c;"><marquee>Specials! Specials! Specials!</marquee></span>
+<ul><b>Luxor Hotel & Casino Specials</b></ul>
+<li>Guaranteed lowest room rate for $35 per night!</li>
+<li>Family Special: $60 for 2 queen bed room!</li>
+<li>Wine and Dine: Single King room plus 2 dinners on us for $100!</li>
+<li>Stay & Play: 10 free $10 chips for 1 week booking for use in our casino!</li>
+<br />
+
+
+<img src="index_files/images/luxor.jpg" width="600" height="340" />
+<br />
+<p>Known for its iconic pyramid shape, Luxor is on the Las Vegas Strip and features a casino and live entertainment. It provides a full-service spa, 4 large pools and a hot tub. Guest rooms at the Luxor provide cable TV with pay-per-view movies. Each room includes a sitting area while bathrooms feature over-sized showers.  All guest rooms are entirely smoke-free. The Luxor will charge a $300 per room fee for cleaning a room that was smoked in. Luxor recently achieved 4 out of 5 keys in the Green Key Eco-Rating Program, a program that certifies hotels based on green practices. Dining at Luxor Las Vegas includes steaks, seafoods and deli-style foods. Buffets and a burger bar can also be found at the hotel. Casino Luxor contains 120,000 square feet of slots and table games including poker. Race & Sports Book, a betting arena, with plasma TVs provide entertainment. Criss Angel Believe Cirque du Soleil nightly show is featured.</p>
+
+<p>Luxor Hotel and Casino has a sauna, a fitness facility, and a seasonal outdoor pool. High-speed (wired) Internet access is complimentary in public areas. Business amenities at this 3.5-star property include a business center, small meeting rooms, and audio-visual equipment. Dining options at this spa property include a restaurant, a coffee shop/café, and a poolside bar. The staff can provide concierge services, tour/ticket assistance, and wedding services. Additional amenities include a casino, a nightclub, and multilingual staff. </p>
+
+<p>We will place an authorization on credit or debit card to cover applicable charges for room, tax and resort fees, as well as a $50 incidental amount per day to allow you access to room charging privileges. This may result in additional authorizations should your charges exceed the originally approved amount. Guests using a debit card in lieu of a credit card acknowledge unused funds are released upon check-out may take 3-7 business days for domestic banks and up to 30 days for international banks to become available through their financial institution. You must present a photo ID when checking in. Your credit card is charged at the time you book. Bed type and smoking preferences are not guaranteed.</p>
+
+</div><!-- end contents_2_left -->
+
+
+
+<div id="contents_2_right" align="center"><!-- contents_2_right -->
+
+<form class="contact">
+
+<fieldset>
+<legend>Customer Information</legend>
+
+<br />
+
+<label>First Name</label>
+<input type="text" />
+
+<div>
+
+<label>Last Name</label>
+<input type="text" />
+
+</div>
+<div>
+
+<label>Address</label>
+<input type="text" />
+
+</div>
+<div>
+
+<label>City</label>
+<input type="text" />
+
+</div>
+<div>
+
+<label>State</label>
+<select>
+	<option selected="selected"></option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Arkansas</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+</div>
+<div>
+
+<label>Zip Code</label>
+<input type="text" />
+
+</div>
+<div>
+
+<label>Phone</label>
+<input type="tel" size="12" id="phone" placeholder="xxx-xxx-xxxx" />
+
+</div>
+<div>
+
+<label>Email</label>
+<input type="email" id="address" />
+
+</div>
+
+</fieldset>
+
+</form>
+
+<br />
+
+
+<form class="lodging">
+
+<fieldset>
+<legend>Lodging Information</legend>
+
+<br />
+
+<div>
+
+<label>Number of People</label>
+<select>
+	<option selected="selected"></option>
+	<option value="">2</option>
+	<option value="">3</option>
+	<option value="">4</option>
+</select>
+</div>
+<div>
+
+<label>Room Style</label>
+<select>
+	<option selected="selected"></option>
+	<option value="">Suite 1 Queen Bed</option>
+	<option value="">Suite 2 Queen Bed</option>
+	<option value="">Room 1 Double Bed</option>
+	<option value="">Room 2 Double Bed</option>
+</select>
+</div>
+
+<div>
+
+<label>Arrival Date</label>
+<input type="date" id="returndate" />
+
+</div>
+
+<div>
+
+<label>Departure Date</label>
+<input type="date" id="departuredate" />
+
+</div>
+
+
+
+</fieldset>
+
+</form>
+<br />
+
+<form class="billing">
+
+<fieldset>
+<legend>Billing Information</legend>
+
+
+<br />
+
+<div>
+
+<label>Credit Card</label>
+<select>
+	<option selected="selected"></option>
+	<option value="">American Express</option>
+	<option value="">Discover</option>
+	<option value="">Master Card</option>
+	<option value="">Visa</option>
+</select>
+</div>
+<div>
+
+<label>Card Number</label>
+<input type="text" />
+
+</div>
+<div>
+
+<label>Expiration Month</label>
+<select>
+	<option selected="selected"></option>
+	<option value="">January</option>
+	<option value="">February</option>
+	<option value="">March</option>
+	<option value="">April</option>
+	<option value="">May</option>
+	<option value="">June</option>
+	<option value="">July</option>
+	<option value="">August</option>
+	<option value="">September</option>
+	<option value="">November</option>
+	<option value="">December</option>
+</select>
+
+</div>
+<div>
+
+<label>Expiration Year</label>
+<select>
+	<option selected="selected"></option>
+	<option value="">2019</option>
+	<option value="">2020</option>
+	<option value="">2021</option>
+	<option value="">2022</option>
+</select>
+
+</div>
+<div>
+
+<input type="submit" name="Submit" />
+<input type="reset" name="Clear" value="Reset" />
+
+</div>
+
+</fieldset>
+
+</form>
+
+
+</div><!-- end contents_2_right -->
+
+
+
+<div id="contents_3" align="center"><!-- contents_3-->
+
+
+</div><!-- end contents_3 -->
+
+
+
+
+
+<div id="contents_3" align="center"><!-- contents_3_right -->
+
+<img src="index_files/images/map.png" width="1180" height="780" />
+
+</div><!-- end contents_3 -->
+
+
+
+
+
+<div id="contents_4_left" align="center"><!-- contents_4_left -->
+
+<img src="index_files/images/nyc.jpg" width="600" height="300" />
+
+<img src="index_files/images/nyccoaster.jpg" width="600" height="300" />
+
+</div><!-- end contents_4_left -->
+
+
+
+<div id="contents_4_right" align="center"><!-- contents_4_right -->
+
+<img src="index_files/images/jumbo.jpg" width="600" height="300" />
+
+<img src="index_files/images/crazy.jpg" width="600" height="300" />
+
+</div><!-- end contents_4_right -->
+
+
+
+
+
+<div id="footer_left" align="left"><!-- footer_left -->
+
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Wikipedia</a></br>
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Luxor Hotel</a></br>
+<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">City of Las Vegas</a></br>
+
+</div><!-- end footer_left -->
+
+
+
+
+
+<div id="footer_center" align="center"><!-- footer_center -->
+
+<img src="index_files/images/luxor.png" alt="" width="250" height="200" align="left" style="margin:10px 15px" />
+
+<img src="index_files/images/ad.jpg" alt="" width="250" height="200" align="right" style="margin:10px 15px" />
+
+</div><!-- end footer_center -->
+
+
+
+
+<div id="footer_right" align="right"><!-- footer_right -->
+
+</div><!-- end footer_right -->
+
+
+
+
+</div><!-- end master -->
+
+</div><!-- end wrapper -->
+
+</body>
+</html>

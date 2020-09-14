@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD/XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+	selectlist.htm
+	author:
+	date created:
+	date revised:
+//-->
+
+<html>
+<head>
+<title>selectlist.htm</title>
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=4.0)" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function navigateSite(showSite)
+{
+   window.location.href = showSite.options[showSite.selectedIndex].value;
+}
+
+-->
+</script>
+
+</head>
+
+<body>
+
+
+<form name="selectlist">
+<select name="sample" onchange="navigateSite(this)" size="1">
+  	<option selected>Select Web Page</option>
+  	<option value="contents/filename.htm">Web Page 1</option>
+  	<option value="contents/filename.htm">Web Page 2</option>
+	<option value="contents/filename.htm">Web Page 3</option>
+	<option value="contents/filename.htm">Web Page 4</option>
+</select>
+</form>
+
+
+
+
+</body>
+</html>

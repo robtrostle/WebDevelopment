@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	documentation segment
+	website:Saga
+	web page: index.htm
+	author:  TrostleRobert
+	date created:  November.2019
+
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Saga</title>
+
+
+<link href="index_files/float.css" rel="stylesheet" type="text/css" />
+
+<link href="index_files/click-scroll.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css"> 
+
+body
+{ 
+	background-color:#FF0000;
+}
+
+
+#wrapper
+{
+	width:1200px;
+	margin:0 auto;
+	
+}
+
+#master
+{
+	position:absolute;
+	padding:0px;
+	border:transparent;
+	background-color:#FF0000;
+	width:1200px;
+	height:4450px;
+	top:10px;
+}
+
+#float_box
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #000;
+	background-color:#fff;
+	width:50px;
+	height:3000px;
+	top:55px;
+	left:900px
+}
+
+#navigation
+{
+	position:absolute;
+	padding:10px;
+	border:#000;
+	background-color:#000;
+	width:1180px;
+	height:55px;
+	top:0px;
+	left:0px
+}
+
+#header
+{
+	position:absolute;
+	padding:0px;
+	border:transparent;
+	background-color:#000;
+	width:1200px;
+	height:675px;
+	top:55px;
+	left:0px
+}
+
+#contents_1
+{
+	position:absolute;
+	padding:0px;
+	border:transparent;
+	background-color:#fff;
+	width:1180px;
+	height:800px;
+	top:655px;
+	left:0px
+}
+#contents_2
+{
+	position:absolute;
+	padding:0px;
+	border: transparent;
+	background-color:#000;
+	width:1200px;
+	height:800px;
+	top:1455px;
+	left:0px
+}
+#contents_3
+{
+	position:absolute;
+	padding:0px;
+	border:transparent;
+	background-color:#000;
+	width:1200px;
+	height:800px;
+	top:2255px;
+	left:0px
+}
+
+
+#contents_4
+{
+	position:absolute;
+	padding:10px;
+	border:transparent;
+	background-color:#000;
+	width:1180px;
+	height:800px;
+	top:3055px;
+	left:0px
+}
+
+#footer_left
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:380px;
+	height:218px;
+	top:3875px;
+	left:0px
+}
+
+#footer_center
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:380px;
+	height:218px;
+	top:3875px;
+	left:400px
+}
+
+#footer_right
+{
+	position:absolute;
+	padding:10px;
+	border:1px solid #606060;
+	background-color:#606060;
+	width:380px;
+	height:218px;
+	top:3875px;
+	left:800px
+}
+
+button
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:900;
+	border:1px solid #F5DEB3;
+	background-color:#000;
+	color:#A52A2A;
+	width:150px;
+	height:35px;
+	text-decoration:none
+}
+
+p
+{
+	font-family:Trebuchet MS; Helvetica, sans-serif;
+	font-size:1.05em;
+	font-style:normal;
+	font-weight:500;
+	text-align:left;
+	background:#FFE4C4;
+	color:#000;
+}
+
+input.scrolltext
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:3em;
+	font-style:normal;
+	font-weight:900;
+	text-align:center;
+	background:#000;
+	color:#FF0000;
+}
+
+input.clock
+{
+	font-family:courier new;
+	font-size:2em;
+	font-style:normal;
+	font-weight:800;
+	text-align:center;
+	background:#000;
+	color:#ADFF2F;
+}
+
+
+
+#marquee_replacement
+{
+	position:absolute;
+	border:transparent;
+	background-color:#000;
+	width:1200px;
+	height:800px;
+	overflow:auto;
+	left:0px
+}
+
+#marquee_replacement p.spacer
+{
+	height:0px;
+}
+
+#marqueecontainer
+{
+position: relative;
+width: 1000px; /*marquee width */
+height: 775px; /*marquee height */
+background-color: #000;
+overflow: hidden;
+border: transparent;
+padding: 0px;
+padding-left: 0px;
+}
+
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function navigateSite(showSite)
+{
+   window.location.href = showSite.options[showSite.selectedIndex].value;
+}
+
+-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function homePage()
+{
+	location.href="index.htm";
+}
+
+-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var message = "... What's To Eat?! ... What's To Eat?!"
+var delay = 500;
+var timerId;
+
+function scrollText( )
+{	
+	message = message.substring(1, message.length)+message.substring(0, 1);
+	document.scrollmsg.scrolltext.value=message;
+	timerId = setTimeout ("scrollText()", delay);
+}
+
+-->
+</script>
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var speed = 2; // change scroll speed with this value
+
+function init(){
+  var el = document.getElementById("marquee_replacement");
+  el.style.overflow = 'hidden';
+  scrollFromBottom();
+}
+ 
+var go = 0;
+var timeout = '';
+/**
+ * This is where the scroll action happens.
+ * Recursive method until stopped.
+ */
+function scrollFromBottom(){
+  clearTimeout(timeout);
+  var el = document.getElementById("marquee_replacement");
+  if(el.scrollTop >= el.scrollHeight-150){
+    el.scrollTop = 0;
+  };
+  el.scrollTop = el.scrollTop + speed;
+  if(go == 0){
+    timeout = setTimeout("scrollFromBottom()",50);
+  };
+}
+ 
+/**
+ * Set the stop variable to be true (will stop the marquee at the next pass).
+ */
+function stop(){
+  go = 1;
+}
+ 
+/**
+ * Set the stop variable to be false and call the marquee function.
+ */
+function startit(){
+  go = 0;
+  scrollFromBottom();
+}
+
+-->
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Cross browser Marquee II- ? Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var delayb4scroll=1000 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
+var marqueespeed=2 //Specify marquee scroll speed (larger is faster 1-10)
+var pauseit=1 //Pause marquee onMousever (0=no. 1=yes)?
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var copyspeed=marqueespeed
+var pausespeed=(pauseit==0)? copyspeed: 0
+var actualheight=''
+
+function scrollmarquee(){
+if (parseInt(cross_marquee.style.top)>(actualheight*(-1)+8)) //if scroller hasn't reached the end of its height
+cross_marquee.style.top=parseInt(cross_marquee.style.top)-copyspeed+"px" //move scroller upwards
+else //else, reset to original position
+cross_marquee.style.top=parseInt(marqueeheight)+8+"px"
+}
+
+function initializemarquee(){
+cross_marquee=document.getElementById("vmarquee")
+cross_marquee.style.top=0
+marqueeheight=document.getElementById("marqueecontainer").offsetHeight
+actualheight=cross_marquee.offsetHeight //height of marquee content (much of which is hidden from view)
+if (window.opera || navigator.userAgent.indexOf("Netscape/7")!=-1){ //if Opera or Netscape 7x, add scrollbars to scroll and exit
+cross_marquee.style.height=marqueeheight+"px"
+cross_marquee.style.overflow="scroll"
+return
+}
+setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initializemarquee, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initializemarquee)
+else if (document.getElementById)
+window.onload=initializemarquee
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function startclock()
+{
+	stopclock();
+	showtime();
+}
+
+var timerID = null;
+var timerRunning = false;
+function stopclock()
+{
+	if (timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+}
+
+function showtime()
+{
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = " " + ((hours >12) ? hours -12 :hours);
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds <10) ? ":0" : ":") + seconds;
+	timeValue += (hours >= 12) ? " PM" : " AM";
+	document.clock.face.value = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+}
+
+-->
+</script>
+
+</head>
+
+<body onload="scrollText( ), startclock(), init()">
+
+
+
+<div id="wrapper"><!-- master -->
+
+<div id="master" align="center"><!-- master -->
+
+
+
+<div id="navigation" align="center"><!-- navigation -->
+
+<button onClick="window.location='#header'">Video</button>
+
+<button onClick="window.location='#contents_1'">Environment</button>
+
+<button onClick="window.location='#contents_2'">Menu</button>
+
+<button onClick="window.location='#contents_3'">Map</button>
+
+<button onClick="window.location='#contents_4'">Dish Pics</button>
+
+<button onClick="window.location='#footer_left'">Contact</button>
+
+</div><!-- end navigation -->
+
+
+
+
+<div id="float_box" align="left"><!--float_box -->
+
+<div class="floating-menu"><!-- navigation -->
+
+<ul id="nav">
+<li id="nav_hom"><a href="#navigation">Top</a></li>
+</ul>
+
+</div>
+
+</div><!-- end float_box -->
+
+
+
+
+
+<div id="header" align="center"><!-- header -->
+
+<video width="100%" height="100%" video controls autoplay loop muted />
+	<source src="index_files/saga.mp4" />
+</video>
+
+
+</div><!-- end header -->
+
+
+
+
+<div id="contents_1" align="center"><!-- contents_1 -->
+
+<div id="marquee_replacement" onmouseout="startit();" onmouseover="stop();">
+<p class="spacer"></p>
+
+<img src="index_files/images/outside.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+<img src="index_files/images/grille.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+<img src="index_files/images/sushi.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+<img src="index_files/images/bar.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+
+</div>
+
+</div><!-- end contents_1 -->
+
+
+
+
+<div id="contents_2" align="center"><!-- contents_2 -->
+
+<form name="scrollmsg">
+<div align="center">
+<input class="scrolltext" type="text" name="scrolltext" size="35.5" />
+</div>
+</form>
+
+<img src="index_files/images/menu4.jpg" alt="" width="350" height="700" align="left" style="margin:10px 15px"/>
+
+<img src="index_files/images/menu5.jpg" alt="" width="350" height="700" align="middle" style="margin:10px 15px"/>
+
+<img src="index_files/images/menu6.jpg" alt="" width="350" height="700" align="right" style="margin:10px 15px"/>
+
+
+
+</div><!-- end contents_2 -->
+
+
+
+<div id="contents_3" align="center"><!-- contents_3 -->
+
+<img src="index_files/images/map.jpg" alt="" width="1200" height="800" align="middle" style="margin:0px 0px"/>
+
+</div><!-- end contents_3 -->
+
+
+
+
+
+<div id="contents_4" align="center"><!-- contents_4 -->
+
+<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+<div id="vmarquee" style="position: absolute; width: 98%;">
+
+<img src="index_files/images/hibachi.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+<img src="index_files/images/boat.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+<img src="index_files/images/fried.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+<img src="index_files/images/eel.jpg" alt="" width="1000" height="700", style="margin:0px 0px; align="middle" />
+
+</div>
+</div>
+
+</div><!-- end contents_4 -->
+
+
+
+
+
+<div id="footer_left" align="left"><!-- footer_left -->
+
+<img src="index_files/images/logo.jpg" alt="" width="300" height="200", style="margin:0px 0px; align="middle" />
+
+</div><!-- end footer_left -->
+
+
+
+
+
+<div id="footer_center" align="center"><!-- footer_center -->
+
+<img src="index_files/images/contact.jpg" alt="" width="300" height="200", style="margin:0px 0px; align="middle" />
+
+</div><!-- end footer_center -->
+
+
+
+
+<div id="footer_right" align="center"><!-- footer_right -->
+<p></p>
+<p></p>
+<form name="clock" onSubmit="0">
+<input class="clock" type="text" name="face" size=11>
+</form>
+
+</div><!-- end footer_right -->
+
+
+
+</div><!-- end master -->
+
+</div><!-- end wrapper -->
+
+</body>
+</html>
